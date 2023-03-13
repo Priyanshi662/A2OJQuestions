@@ -12,11 +12,12 @@ int main()
         arr[i]=x;
     }
     int mindiff=INT_MAX;
-    int prev=arr[0];
+    int prev;
     int first,second;
     int previn=0;
     for(int i=1;i<n;i++)
     {
+        prev=arr[i-1];
         if(abs(arr[i]-prev)<mindiff)
         {
             first=previn+1;

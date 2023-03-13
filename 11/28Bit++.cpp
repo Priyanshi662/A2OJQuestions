@@ -10,22 +10,13 @@ int main()
         string s;
         cin>>s;
         int sz=s.size();
-        int carry=0;
-        if(s[0]=='+')
+        if(s[0]=='+' || s[sz-1]=='+')
         {
-            totres+=1+carry;
+            totres+=1;
         }
-        else if(s[0]=='-')
+        else if(s[0]=='-'||s[sz-1]=='-')
         {
-            totres-=1+carry;
-        }
-        else if(s[sz-1]=='+')
-        {
-            carry=1;
-        }
-        else if(s[sz-1]=='-')
-        {
-            carry=-1;
+            totres-=1;
         }
     }
     cout<<totres<<endl;
