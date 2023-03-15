@@ -1,3 +1,4 @@
 *.exe
 .vscode/
-tempcoderunner
+.tempcoderunner.cpp
+.tempcoderunner.exe
