@@ -1,4 +1,6 @@
 *.exe
 .vscode/
-.tempcoderunner.cpp
-.tempcoderunner.exe
+tempcoderunner.cpp
+tempcoderunner.exe
+test.cpp
+test.exe
